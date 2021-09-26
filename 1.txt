@@ -1,0 +1,28 @@
+ class Program
+    {
+         static void Main()
+        {
+            int[] arr = { 5, 12, 45, 85, 16 };
+            int x = 12;
+
+            
+            int result = axtar(arr, x);
+            if (result == -1)
+                Console.WriteLine("verilmis reqem arrayde yoxdur");
+            else
+                Console.WriteLine("verilmis reqem arrayde var");
+        }
+
+
+         static int axtar(int[] arr, int x)
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n; i++)
+            {
+                if (arr[i] == x)
+                    return 0;
+            }
+            return -1;
+        }
+
+    }
